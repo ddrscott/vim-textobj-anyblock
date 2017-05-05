@@ -5,12 +5,7 @@ endif
 let s:save_cpo = &cpo
 set cpo&vim
 
-call textobj#user#plugin('anyblock', {
-    \ '-' : {
-    \      'select-a' : 'ab', '*select-a-function*' : 'textobj#anyblock#select_a',
-    \      'select-i' : 'ib', '*select-i-function*' : 'textobj#anyblock#select_i',
-    \   },
-    \ })
+" no default bindings
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
